@@ -13,13 +13,15 @@ useEffect(()=> {
   .then((response)=> response.json())
   .then((data)=> setChartData(data));
 }, []);
+
+
 // Task 5: Render Charts in the App
-if (!chartData){
+if (!chartData) {
   return <div>Loading</div>;
-}
+};
 return (
   <div style={{textAlign: 'center'}}>
-  <h1> Interactive Charts: </h1>
+  <h1> Interactive Charts with React and Chart.js </h1>
   <BarChart data={chartData}/>
   <lineChart data={chartData}/>
   <scatterChart data={chartData}/>
