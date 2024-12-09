@@ -32,4 +32,4 @@ const bubbleChart = ({data})=> {
     };
     return <ChartComponent type="bubble" data={bubbleChartData} options={BubbleChartOptions}/>;
 };
-export default bubbleChart;
+export default bubbleChart
