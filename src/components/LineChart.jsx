@@ -1,6 +1,6 @@
 // Task 3: Implement Specific Chart Components
 import ChartComponent from "./ChartComponent";
-const lineChart = ({data})=> {
+const LineChart = ({data})=> {
     const lineChartData = {
         labels: financial_data.profits,
         datasets: [
@@ -26,4 +26,4 @@ const lineChart = ({data})=> {
     };
     return <ChartComponent type= 'line' data={lineChartData} options ={lineChartOptions}/>;
 };
-export default lineChart;
+export default LineChart;

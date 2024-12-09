@@ -3,9 +3,9 @@ import { useState } from 'react'
 import '/App.css'
 
 import BarChart from './components/BarChart'
-import bubbleChart from './components/BubbleChart'
-import scatterChart from './components/ScatterChart'
-import lineChart from './components/LineChart'
+import BubbleChart from './components/BubbleChart'
+import ScatterChart from './components/ScatterChart'
+import LineChart from './components/LineChart'
 
 const[chartData, setChartData] = useState(null);
 useEffect(()=> {
@@ -23,9 +23,9 @@ return (
   <div style={{textAlign: 'center'}}>
   <h1> Interactive Charts with React and Chart.js </h1>
   <BarChart data={chartData}/>
-  <lineChart data={chartData}/>
-  <scatterChart data={chartData}/>
-  <bubbleChart data={chartData}/>
+  <LineChart data={chartData}/>
+  <ScatterChart data={chartData}/>
+  <BubbleChart data={chartData}/>
   </div>
 );
 export default App;

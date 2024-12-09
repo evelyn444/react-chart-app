@@ -1,6 +1,6 @@
 // Task 3: Implement Specific Chart Components
 import ChartComponent from "./ChartComponent";
-const bubbleChart = ({data})=> {
+const BubbleChart = ({data})=> {
     const bubbleChartData ={
         labels: financial_data.expenses, financial_data,profits,
         datasets:[
@@ -32,4 +32,4 @@ const bubbleChart = ({data})=> {
     };
     return <ChartComponent type="bubble" data={bubbleChartData} options={BubbleChartOptions}/>;
 };
-export default bubbleChart
+export default BubbleChart

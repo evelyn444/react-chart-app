@@ -1,6 +1,6 @@
 //Task 3: Implement Specific Chart Components
 import ChartComponent from "./ChartComponent";
-const scatterChart = ({data})=> {
+const ScatterChart = ({data})=> {
     const scatterChartData ={
         labels: financial_data.expenses, financial_data,profits,
         datasets: [
@@ -30,4 +30,4 @@ const scatterChart = ({data})=> {
     }; return <ChartComponent type='scatter' data={scatterChartData} options={scatterChartOptions}/>;
 
 };
-export default scatterChart;
+export default ScatterChart;
