@@ -5,7 +5,7 @@ const BarChart = ({data})=> {
         labels: financial_data.months,
         datasets: [
             {
-                label: 'Monthly Sales',
+                label: 'Monthly Sales', //labels and data
                 data: financial_data.sales,
                 backgroundColor: 'rgba(94, 41, 255, 0.5)',
                 borderColor: 'rgba(94, 41, 255, 1)',
@@ -14,7 +14,7 @@ const BarChart = ({data})=> {
         ],
     };
     const barChartOptions ={
-        scales:{
+        scales:{ //chart options
             y: {
                 beginAtZero: true,
             },

@@ -5,7 +5,7 @@ const BubbleChart = ({data})=> {
         labels: financial_data.expenses, financial_data,profits,
         datasets:[
             {
-                label: 'Expenses',
+                label: 'Expenses', //labels and data
                 data: financial_data.expenses,
                 
                 label: 'Profits',
@@ -24,7 +24,7 @@ const BubbleChart = ({data})=> {
 
     };
     const BubbleChartOptions = {
-        scales: {
+        scales: { //chart options
             y: {
                 beginAtZero: true,
             },

@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 
-import BarChart from './components/BarChart'
+import BarChart from './components/BarChart' //importing the charts
 import BubbleChart from './components/BubbleChart'
 import ScatterChart from './components/ScatterChart'
 import LineChart from './components/LineChart'
@@ -19,8 +19,8 @@ if (!chartData)
   {
     return <div>Loading</div>;
   }
-return (
-  <div style={{textAlign: 'center'}}>
+return ( // render the charts
+  <div style={{textAlign: 'center'}}> 
   <h1> Interactive Charts with React and Chart.js </h1>
   <BarChart data={chartData}/>
   <LineChart data={chartData}/>

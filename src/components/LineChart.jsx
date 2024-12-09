@@ -5,7 +5,7 @@ const LineChart = ({data})=> {
         labels: financial_data.profits,
         datasets: [
             {
-                label: 'Monthly Profits',
+                label: 'Monthly Profits', //labels and data
                 data: financial_data.profits,
                 backgroundColor:'rgba(150, 38, 38, 0.5)',
                 borderColor:'rgba(150, 38,38,1)',
@@ -15,7 +15,7 @@ const LineChart = ({data})=> {
     };
 
     const lineChartOptions ={
-        scales: {
+        scales: { //chart options
             x: {
                 beginAtZero: true,
             },
